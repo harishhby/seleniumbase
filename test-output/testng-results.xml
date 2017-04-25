@@ -1,0 +1,98 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testng-results skipped="0" failed="1" ignored="0" total="3" passed="2">
+  <reporter-output>
+  </reporter-output>
+  <suite name="SuiteName" duration-ms="47259" started-at="2017-04-25T06:20:35Z" finished-at="2017-04-25T06:21:22Z">
+    <groups>
+    </groups>
+    <test name="Login Test" duration-ms="25476" started-at="2017-04-25T06:20:35Z" finished-at="2017-04-25T06:21:00Z">
+      <class name="com.unisys.pom.testcases.LoginTest">
+        <test-method status="PASS" signature="doLogin(java.util.Hashtable)[pri:0, instance:com.unisys.pom.testcases.LoginTest@3b0090a4]" name="doLogin" duration-ms="24053" started-at="2017-04-25T11:50:35Z" data-provider="getData" finished-at="2017-04-25T11:50:59Z">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[{Username=9538442585, ExpectedResult=Success, Password=Unisys*1234, Runmode=Y, Browser=Chrome}]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- doLogin -->
+        <test-method status="PASS" signature="quit()[pri:0, instance:com.unisys.pom.testcases.LoginTest@3b0090a4]" name="quit" is-config="true" duration-ms="1369" started-at="2017-04-25T11:50:59Z" finished-at="2017-04-25T11:51:00Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- quit -->
+      </class> <!-- com.unisys.pom.testcases.LoginTest -->
+    </test> <!-- Login Test -->
+    <test name="Login Test_2" duration-ms="35478" started-at="2017-04-25T06:20:35Z" finished-at="2017-04-25T06:21:10Z">
+      <class name="com.unisys.pom.testcases.LoginTest_2">
+        <test-method status="FAIL" signature="doLogin_2(java.util.Hashtable)[pri:0, instance:com.unisys.pom.testcases.LoginTest_2@24313fcc]" name="doLogin_2" duration-ms="34606" started-at="2017-04-25T11:50:35Z" data-provider="getData" finished-at="2017-04-25T11:51:10Z">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[{Username=9538442585, ExpectedResult=Skip, Password=test, Runmode=Y, Browser=Chrome}]]>
+              </value>
+            </param>
+          </params>
+          <exception class="java.lang.AssertionError">
+            <message>
+              <![CDATA[User NOT Logged in]]>
+            </message>
+            <full-stacktrace>
+              <![CDATA[java.lang.AssertionError: User NOT Logged in
+	at org.testng.Assert.fail(Assert.java:93)
+	at com.unisys.pom.testcases.base.BaseTest.reportFailure(BaseTest.java:92)
+	at com.unisys.pom.testcases.LoginTest_2.doLogin_2(LoginTest_2.java:46)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(Unknown Source)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(Unknown Source)
+	at java.lang.reflect.Method.invoke(Unknown Source)
+	at org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:108)
+	at org.testng.internal.Invoker.invokeMethod(Invoker.java:661)
+	at org.testng.internal.Invoker.invokeTestMethod(Invoker.java:869)
+	at org.testng.internal.Invoker.invokeTestMethods(Invoker.java:1193)
+	at org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:126)
+	at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:109)
+	at org.testng.TestRunner.privateRun(TestRunner.java:744)
+	at org.testng.TestRunner.run(TestRunner.java:602)
+	at org.testng.SuiteRunner.runTest(SuiteRunner.java:380)
+	at org.testng.SuiteRunner.access$000(SuiteRunner.java:39)
+	at org.testng.SuiteRunner$SuiteWorker.run(SuiteRunner.java:414)
+	at org.testng.internal.thread.ThreadUtil$1.call(ThreadUtil.java:52)
+	at java.util.concurrent.FutureTask.run(Unknown Source)
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(Unknown Source)
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(Unknown Source)
+	at java.lang.Thread.run(Unknown Source)
+]]>
+            </full-stacktrace>
+          </exception> <!-- java.lang.AssertionError -->
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- doLogin_2 -->
+        <test-method status="PASS" signature="quit()[pri:0, instance:com.unisys.pom.testcases.LoginTest_2@24313fcc]" name="quit" is-config="true" duration-ms="818" started-at="2017-04-25T11:51:10Z" finished-at="2017-04-25T11:51:10Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- quit -->
+      </class> <!-- com.unisys.pom.testcases.LoginTest_2 -->
+    </test> <!-- Login Test_2 -->
+    <test name="Login Test_1" duration-ms="47259" started-at="2017-04-25T06:20:35Z" finished-at="2017-04-25T06:21:22Z">
+      <class name="com.unisys.pom.testcases.LoginTest_1">
+        <test-method status="PASS" signature="doLogin_1(java.util.Hashtable)[pri:0, instance:com.unisys.pom.testcases.LoginTest_1@710f4dc7]" name="doLogin_1" duration-ms="46813" started-at="2017-04-25T11:50:35Z" data-provider="getData" finished-at="2017-04-25T11:51:22Z">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[{Username=9538442585, ExpectedResult=Unsuccessful, Password=test, Runmode=Y, Browser=Mozilla}]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- doLogin_1 -->
+        <test-method status="PASS" signature="quit()[pri:0, instance:com.unisys.pom.testcases.LoginTest_1@710f4dc7]" name="quit" is-config="true" duration-ms="392" started-at="2017-04-25T11:51:22Z" finished-at="2017-04-25T11:51:22Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- quit -->
+      </class> <!-- com.unisys.pom.testcases.LoginTest_1 -->
+    </test> <!-- Login Test_1 -->
+  </suite> <!-- SuiteName -->
+</testng-results>

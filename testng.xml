@@ -1,0 +1,21 @@
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd" >
+<suite name="SuiteName" parallel="tests">
+	<test name="Login Test" allow-return-values="true">
+		<classes>
+			<class name="com.unisys.pom.testcases.LoginTest" />
+		</classes>
+	</test>
+	
+	<test name="Login Test_1" allow-return-values="true">
+		<classes>
+			<class name="com.unisys.pom.testcases.LoginTest_1" />
+		</classes>
+	</test>
+	
+	<test name="Login Test_2" allow-return-values="true">
+		<classes>
+			<class name="com.unisys.pom.testcases.LoginTest_2" />
+		</classes>
+	</test>
+</suite>
+
